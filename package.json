@@ -1,0 +1,19 @@
+{
+  "name": "et9001-conference",
+  "version": "1.0.0",
+  "description": "parent teacher conference software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insanity54/et9001-conference.git"
+  },
+  "author": "Chris Grimmett <chris@grimtech.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/insanity54/et9001-conference/issues"
+  },
+  "homepage": "https://github.com/insanity54/et9001-conference#readme"
+}

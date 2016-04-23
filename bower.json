@@ -1,0 +1,25 @@
+{
+  "name": "et9001-conference",
+  "description": "parent teacher conference software",
+  "main": "index.js",
+  "authors": [
+    "Chris Grimmett <chris@grimtech.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/insanity54/et9001-conference",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-mobile": "^1.4.5",
+    "underscore": "^1.8.3",
+    "backbone": "^1.3.3",
+    "backbone.localStorage": "^1.1.16",
+    "Backbone.dualStorage": "^1.4.1"
+  }
+}
