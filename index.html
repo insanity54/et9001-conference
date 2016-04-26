@@ -23,8 +23,11 @@
         
         <section class="conferenceapp">
 			<header class="header">
-				<h1>todos</h1>
-				<textarea class="new-conference" placeholder="I like or dislike this learning tool because..." ></textarea>
+				<h1>conferences</h1>
+				<div id="conference-log">
+				    <ul></ul>
+				</div>
+				<textarea class="new-conference-box" placeholder="I like or dislike this learning tool because..." ></textarea>
 			</header>
 			<section class="main">
 				<button id="submit-conference">Submit</button>
@@ -54,6 +57,14 @@
                 <% } %>
                     <div class="todo-count"><b><%= remaining %></b>
                         <%=r emaining==1 ? 'item' : 'items' %> left</div>
+        </script>
+        
+        <script type="text/template" id="log-template">
+            <ul>
+                <% _.each(app.conferences, function(conf) { %>
+                    <li><%- conf.communication %></li>
+                <% }); %>
+            </ul>
         </script>
     </body>
 </html>
