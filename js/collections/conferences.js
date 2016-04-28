@@ -9,12 +9,12 @@ var app = app || {};
 
     var Conferences = Backbone.Collection.extend({
         url: function() {
-            return "https://hook.io/insanity54/et9001-conference/" + $("#pageID").text();
+            return "https://et9001-infra-insanity54-1.c9users.io/api/conferences/" + $("#pageID").text();
         },
-        model: app.Conference
+        model: app.Conference,
+        // url: function() {
+        //     return this.url + '?pid=' + pid + '&cid=' + this.id;
     });
-    
-    
     
     app.conferences = new Conferences();
 })(jQuery);

@@ -9,15 +9,5 @@ var ENTER_KEY = 13;
 $(function() {
     'use strict';
 
-    // controller
-    
-    app.conferences.fetch({
-        success: function(collection, response, options) {
-            console.log(response);
-            
-        },
-        error: function(collection, response, options) {
-            console.log(collection);
-        }
-    });
+    new app.appView();
 });
